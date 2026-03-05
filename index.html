@@ -1,6 +1,7 @@
 <html>
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SHREE RADHA</title>
     <style>
         body {
@@ -43,13 +44,41 @@
             background-color: #f44336;
         }
         
-         .footer-credit {
+        .footer-credit {
             position: fixed;
             bottom: 10px;
             right: 15px;
             font-size: 14px;
             color: #666;
             font-style: italic;
+        }
+        
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 36px;
+                margin-bottom: 30px;
+            }
+            
+            #counter {
+                font-size: 72px;
+                margin: 30px 0;
+            }
+            
+            .button-container {
+                width: 90%;
+                max-width: 400px;
+            }
+            
+            button {
+                padding: 15px 30px;
+                font-size: 24px;
+            }
+            
+            .footer-credit {
+                font-size: 12px;
+                bottom: 15px;
+                right: 15px;
+            }
         }
     </style>
 </head>
@@ -74,8 +103,6 @@
             document.getElementById('counter').textContent = count;
         }
     </script>
-   <div class="footer-credit">Created by Himanshu Tanwar</div>
+    
+    <div class="footer-credit">Created by Himanshu Tanwar</div>
 </html>
-
-
-
